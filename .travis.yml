@@ -27,7 +27,7 @@ script:
 - docker tag udagram-frontend nguyendolar/udagram-frontend:latest
 - docker tag udagram-reverseproxy nguyendolar/udagram-reverseproxy:latest
 
-## Format DOCKER information
+## Format DOCKER informations
 after-success:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker push nguyendolar/udagram-reverseproxy:latest
