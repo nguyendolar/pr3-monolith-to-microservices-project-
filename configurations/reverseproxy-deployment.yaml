@@ -16,7 +16,7 @@ spec:
       name: reverseproxy
     spec:
       containers:
-      - image: shincnielts/udagram-reverseproxy:latest
+      - image: nguyendolar/udagram-reverseproxy:latest
         name: reverseproxy
         imagePullPolicy: Always
         resources:
